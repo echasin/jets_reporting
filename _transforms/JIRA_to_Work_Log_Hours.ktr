@@ -238,8 +238,8 @@
         <name2/>
       </key>
       <key>
-        <name>Time_Spent_Hour</name>
-        <field>Time_Spent_Hour</field>
+        <name>Date</name>
+        <field>date</field>
         <condition>&#x3d;</condition>
         <name2/>
       </key>
@@ -355,12 +355,6 @@
       <key>
         <name>Username</name>
         <field>Username</field>
-        <condition>&#x3d;</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>Time_Spent_Hour</name>
-        <field>Time_Spent_Hour</field>
         <condition>&#x3d;</condition>
         <name2/>
       </key>
