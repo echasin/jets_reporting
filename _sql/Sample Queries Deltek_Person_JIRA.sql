@@ -165,14 +165,9 @@ Select DELTEK_Hours.employee_full_name as name,DELTEK_Hours.deltek_date as Date,
 Union
 Select  JIRA_HOURS.employee_full_name as name,JIRA_Hours.jira_date as Date, 0 AS D_HOURS, JIRA_Hours.jira_hours as J_HOURS from  JIRA_Hours_sum_date JIRA_HOURS
 order by name,Date
-) as foo
-where name = 'PATEL, SACHIN'
+) as missing_data
 group by name, date
 order by name, date
-
-
-
-
 
 DELTEK_Hours.employee_full_name, Date
 

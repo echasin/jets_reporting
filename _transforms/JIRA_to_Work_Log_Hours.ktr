@@ -237,12 +237,6 @@
         <condition>&#x3d;</condition>
         <name2/>
       </key>
-      <key>
-        <name>Date</name>
-        <field>date</field>
-        <condition>&#x3d;</condition>
-        <name2/>
-      </key>
       <value>
         <name>Project</name>
         <rename>Project</rename>
