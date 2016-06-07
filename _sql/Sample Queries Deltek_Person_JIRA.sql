@@ -118,14 +118,14 @@ order by to_char(d.date_hrs_deltek, 'YYYY-MM-DD')
 
 Drop view JIRA_hours_sum_date;
 Create view JIRA_hours_sum_date AS
-Select p.employee_id, upper(p.employee_full_name) as employee_full_name, to_char(j.date, 'YYYY-MM-DD') as JIRA_DATE ,sum(j.time_spent_hour) as JIRA_HOURS from jira_logged_work j, person p
+Select j.project, j.key as Project, j.title, j.type, j.cost_tracking, p.employee_id, upper(p.employee_full_name) as employee_full_name, to_char(j.date, 'YYYY-MM-DD') as JIRA_DATE ,sum(j.time_spent_hour) as JIRA_HOURS from jira_logged_work j, person p
 where
 j.username = p.jira_user_name
-group by p.employee_id, p.employee_full_name, to_char(j.date, 'YYYY-MM-DD')
+group by j.project, j.type, j.title, j.cost_tracking, j.key ,p.employee_id, p.employee_full_name, to_char(j.date, 'YYYY-MM-DD')
 order by upper(p.employee_full_name),to_char(j.date, 'YYYY-MM-DD')
 
 
-Select * from JIRA_Hours
+Select * from JIRA_hours_sum_date
 
 Drop view DELTEK_hours_sum_date; 
 Create view DELTEK_hours_sum_date AS
