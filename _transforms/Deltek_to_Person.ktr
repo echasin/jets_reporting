@@ -132,12 +132,6 @@
         <condition>&#x3d;</condition>
         <name2/>
       </key>
-      <key>
-        <name>JIRA_User_Name</name>
-        <field>JIRA_User_Name</field>
-        <condition>&#x3d;</condition>
-        <name2/>
-      </key>
       <value>
         <name>Employee_ID</name>
         <rename>Employee_ID</rename>
@@ -156,8 +150,8 @@
     </lookup>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>622</xloc>
-      <yloc>103</yloc>
+      <xloc>608</xloc>
+      <yloc>96</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
